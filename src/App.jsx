@@ -6,7 +6,7 @@ import Heading from "./ui/Heading"
 import Row from "./ui/Row"
 
 const StyledApp = styled.div`
-  background-color: orangered;
+  /* background-color: */
   padding: 20px;
 `
 
@@ -21,7 +21,13 @@ function App() {
 
             <div>
               <Heading as="h2">Check in and out</Heading>
-              <Button size:onClick={() => alert("Check In")}>Check In</Button>
+              <Button
+                variation="primary"
+                size="medium"
+                onClick={() => alert("Check In")}
+              >
+                Check In
+              </Button>
               <Button
                 variation="secondary"
                 size="small"
